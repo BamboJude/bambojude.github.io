@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundWave - Professional Musician Template</title>
+    <meta
+      name="description"
+      content="Professional musician website template for bookings, music streaming, and fan engagement"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading">
+      <div class="loading-content">
+        <div class="vinyl-record">
+          <div class="vinyl-center"></div>
+          <div class="vinyl-grooves"></div>
+        </div>
+        <p>Loading the beat...</p>
+      </div>
+    </div>
+
+    <!-- Audio Background -->
+    <div class="audio-visualizer">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2 class="logo-text">SoundWave</h2>
+          <div class="logo-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#music" class="nav-link">Music</a></li>
+          <li><a href="#videos" class="nav-link">Videos</a></li>
+          <li><a href="#shows" class="nav-link">Shows</a></li>
+          <li><a href="#booking" class="nav-link booking-btn">Book Now</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="floating-notes">
+          <i class="fas fa-music note"></i>
+          <i class="fas fa-music note"></i>
+          <i class="fas fa-music note"></i>
+          <i class="fas fa-music note"></i>
+          <i class="fas fa-music note"></i>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">Alex</span>
+            <span class="title-line highlight">Rodriguez</span>
+          </h1>
+          <p class="hero-subtitle">Electronic Music Producer & DJ</p>
+          <p class="hero-description">
+            Creating beats that move souls and ignite dance floors worldwide
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#music" class="btn btn-primary">
+              <i class="fas fa-play"></i>
+              <span>Listen Now</span>
+            </a>
+            <a href="#booking" class="btn btn-secondary">
+              <i class="fas fa-calendar"></i>
+              <span>Book Show</span>
+            </a>
+          </div>
+
+          <div class="streaming-links">
+            <a href="#" class="stream-link spotify">
+              <i class="fab fa-spotify"></i>
+              <span>Spotify</span>
+            </a>
+            <a href="#" class="stream-link apple">
+              <i class="fab fa-apple"></i>
+              <span>Apple Music</span>
+            </a>
+            <a href="#" class="stream-link youtube">
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+            <a href="#" class="stream-link soundcloud">
+              <i class="fab fa-soundcloud"></i>
+              <span>SoundCloud</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="dj-console">
+            <div class="console-deck left-deck">
+              <div class="turntable">
+                <div class="vinyl spinning">
+                  <div class="vinyl-label">
+                    <span>NOW PLAYING</span>
+                  </div>
+                </div>
+              </div>
+              <div class="deck-controls">
+                <div class="slider"></div>
+                <div class="knob"></div>
+                <div class="knob"></div>
+              </div>
+            </div>
+
+            <div class="console-mixer">
+              <div class="mixer-channel">
+                <div class="channel-slider"></div>
+                <div class="channel-knobs">
+                  <div class="knob small"></div>
+                  <div class="knob small"></div>
+                  <div class="knob small"></div>
+                </div>
+              </div>
+              <div class="mixer-channel">
+                <div class="channel-slider"></div>
+                <div class="channel-knobs">
+                  <div class="knob small"></div>
+                  <div class="knob small"></div>
+                  <div class="knob small"></div>
+                </div>
+              </div>
+              <div class="crossfader"></div>
+            </div>
+
+            <div class="console-deck right-deck">
+              <div class="turntable">
+                <div class="vinyl spinning-reverse">
+                  <div class="vinyl-label">
+                    <span>NEXT UP</span>
+                  </div>
+                </div>
+              </div>
+              <div class="deck-controls">
+                <div class="slider"></div>
+                <div class="knob"></div>
+                <div class="knob"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About the Artist</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <h3 class="about-intro">Crafting Electronic Symphonies</h3>
+            <p>
+              With over 8 years in the electronic music scene, Alex Rodriguez
+              has become a defining voice in progressive house and techno. From
+              underground clubs to major festivals, his unique sound has
+              captivated audiences worldwide.
+            </p>
+            <p>
+              His journey began in the vibrant nightlife of Miami, where he
+              honed his skills mixing tracks that seamlessly blend deep
+              basslines with ethereal melodies. Today, he's recognized for his
+              innovative approach to electronic music production.
+            </p>
+
+            <div class="achievements">
+              <div class="achievement">
+                <div class="achievement-icon">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <div class="achievement-text">
+                  <h4>50+ Festivals</h4>
+                  <p>Performed worldwide</p>
+                </div>
+              </div>
+              <div class="achievement">
+                <div class="achievement-icon">
+                  <i class="fas fa-music"></i>
+                </div>
+                <div class="achievement-text">
+                  <h4>3 Albums</h4>
+                  <p>Chart-topping releases</p>
+                </div>
+              </div>
+              <div class="achievement">
+                <div class="achievement-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="achievement-text">
+                  <h4>500K+ Fans</h4>
+                  <p>Global following</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual">
+            <div class="artist-image">
+              <div class="image-placeholder">
+                <i class="fas fa-user-music"></i>
+              </div>
+              <div class="image-overlay">
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="sound-waves">
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Latest Tracks</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="music-player">
+          <div class="now-playing">
+            <div class="track-info">
+              <h3 class="track-title">Midnight Pulse</h3>
+              <p class="track-artist">Alex Rodriguez</p>
+            </div>
+            <div class="player-controls">
+              <button class="control-btn prev">
+                <i class="fas fa-step-backward"></i>
+              </button>
+              <button class="control-btn play-pause">
+                <i class="fas fa-play"></i>
+              </button>
+              <button class="control-btn next">
+                <i class="fas fa-step-forward"></i>
+              </button>
+            </div>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <div class="time-display">
+              <span class="current-time">0:00</span>
+              <span class="total-time">3:45</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tracks-grid">
+          <div class="track-card active" data-track="1">
+            <div class="track-artwork">
+              <div class="artwork-placeholder">
+                <i class="fas fa-music"></i>
+              </div>
+              <div class="play-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="track-details">
+              <h4 class="track-name">Midnight Pulse</h4>
+              <p class="track-genre">Progressive House</p>
+              <div class="track-stats">
+                <span class="duration">3:45</span>
+                <span class="plays">2.1M plays</span>
+              </div>
+            </div>
+            <div class="streaming-options">
+              <a href="#" class="stream-btn spotify"
+                ><i class="fab fa-spotify"></i
+              ></a>
+              <a href="#" class="stream-btn apple"
+                ><i class="fab fa-apple"></i
+              ></a>
+              <a href="#" class="stream-btn youtube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="track-card" data-track="2">
+            <div class="track-artwork">
+              <div class="artwork-placeholder">
+                <i class="fas fa-music"></i>
+              </div>
+              <div class="play-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="track-details">
+              <h4 class="track-name">Electric Dreams</h4>
+              <p class="track-genre">Techno</p>
+              <div class="track-stats">
+                <span class="duration">4:12</span>
+                <span class="plays">1.8M plays</span>
+              </div>
+            </div>
+            <div class="streaming-options">
+              <a href="#" class="stream-btn spotify"
+                ><i class="fab fa-spotify"></i
+              ></a>
+              <a href="#" class="stream-btn apple"
+                ><i class="fab fa-apple"></i
+              ></a>
+              <a href="#" class="stream-btn youtube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="track-card" data-track="3">
+            <div class="track-artwork">
+              <div class="artwork-placeholder">
+                <i class="fas fa-music"></i>
+              </div>
+              <div class="play-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="track-details">
+              <h4 class="track-name">Neon Nights</h4>
+              <p class="track-genre">Deep House</p>
+              <div class="track-stats">
+                <span class="duration">5:23</span>
+                <span class="plays">3.2M plays</span>
+              </div>
+            </div>
+            <div class="streaming-options">
+              <a href="#" class="stream-btn spotify"
+                ><i class="fab fa-spotify"></i
+              ></a>
+              <a href="#" class="stream-btn apple"
+                ><i class="fab fa-apple"></i
+              ></a>
+              <a href="#" class="stream-btn youtube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="track-card upcoming" data-track="4">
+            <div class="track-artwork">
+              <div class="artwork-placeholder">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="coming-soon">
+                <span>Coming Soon</span>
+              </div>
+            </div>
+            <div class="track-details">
+              <h4 class="track-name">Cosmic Journey</h4>
+              <p class="track-genre">Ambient Techno</p>
+              <div class="track-stats">
+                <span class="duration">--:--</span>
+                <span class="release-date">Dec 2024</span>
+              </div>
+            </div>
+            <div class="streaming-options">
+              <button class="notify-btn">
+                <i class="fas fa-bell"></i>
+                <span>Notify Me</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="videos">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Music Videos</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="videos-grid">
+          <div class="video-card featured">
+            <div class="video-thumbnail">
+              <div class="thumbnail-placeholder">
+                <i class="fas fa-play-circle"></i>
+              </div>
+              <div class="video-overlay">
+                <button class="video-play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+              <div class="video-duration">3:45</div>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Midnight Pulse - Official Music Video</h3>
+              <p class="video-description">
+                Experience the visual journey of our latest hit single
+              </p>
+              <div class="video-stats">
+                <span class="views">1.2M views</span>
+                <span class="date">2 weeks ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <div class="thumbnail-placeholder">
+                <i class="fas fa-play-circle"></i>
+              </div>
+              <div class="video-overlay">
+                <button class="video-play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+              <div class="video-duration">4:12</div>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Electric Dreams - Behind the Scenes</h3>
+              <p class="video-description">
+                Studio session and creative process
+              </p>
+              <div class="video-stats">
+                <span class="views">850K views</span>
+                <span class="date">1 month ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <div class="thumbnail-placeholder">
+                <i class="fas fa-play-circle"></i>
+              </div>
+              <div class="video-overlay">
+                <button class="video-play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+              <div class="video-duration">6:30</div>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Live at Ultra Music Festival 2024</h3>
+              <p class="video-description">Full set performance highlights</p>
+              <div class="video-stats">
+                <span class="views">2.5M views</span>
+                <span class="date">3 months ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shows Section -->
+    <section id="shows" class="shows">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Upcoming Shows</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="shows-list">
+          <div class="show-card">
+            <div class="show-date">
+              <div class="month">DEC</div>
+              <div class="day">15</div>
+            </div>
+            <div class="show-info">
+              <h3 class="show-title">Electric Nights Festival</h3>
+              <p class="show-venue">Madison Square Garden, New York</p>
+              <p class="show-time">8:00 PM - 2:00 AM</p>
+            </div>
+            <div class="show-actions">
+              <a href="#" class="ticket-btn">Get Tickets</a>
+              <button class="info-btn">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="show-card">
+            <div class="show-date">
+              <div class="month">DEC</div>
+              <div class="day">22</div>
+            </div>
+            <div class="show-info">
+              <h3 class="show-title">New Year's Eve Countdown</h3>
+              <p class="show-venue">Club Avalon, Los Angeles</p>
+              <p class="show-time">10:00 PM - 6:00 AM</p>
+            </div>
+            <div class="show-actions">
+              <a href="#" class="ticket-btn">Get Tickets</a>
+              <button class="info-btn">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="show-card">
+            <div class="show-date">
+              <div class="month">JAN</div>
+              <div class="day">08</div>
+            </div>
+            <div class="show-info">
+              <h3 class="show-title">Winter Music Conference</h3>
+              <p class="show-venue">Miami Beach Convention Center</p>
+              <p class="show-time">7:00 PM - 1:00 AM</p>
+            </div>
+            <div class="show-actions">
+              <a href="#" class="ticket-btn">Get Tickets</a>
+              <button class="info-btn">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="show-card">
+            <div class="show-date">
+              <div class="month">JAN</div>
+              <div class="day">20</div>
+            </div>
+            <div class="show-info">
+              <h3 class="show-title">Underground Sessions</h3>
+              <p class="show-venue">Warehouse District, Chicago</p>
+              <p class="show-time">11:00 PM - 5:00 AM</p>
+            </div>
+            <div class="show-actions">
+              <a href="#" class="ticket-btn">Get Tickets</a>
+              <button class="info-btn">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Book a Show</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Ready to bring the energy to your event? Let's make it happen.
+          </p>
+        </div>
+
+        <div class="booking-content">
+          <div class="booking-info">
+            <div class="booking-card">
+              <div class="card-icon">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <h3>Event Planning</h3>
+              <p>
+                From intimate club nights to massive festival stages, we'll
+                create an unforgettable experience tailored to your audience.
+              </p>
+            </div>
+
+            <div class="booking-card">
+              <div class="card-icon">
+                <i class="fas fa-music"></i>
+              </div>
+              <h3>Custom Sets</h3>
+              <p>
+                Every performance is unique. We craft custom setlists that match
+                your event's vibe and keep the energy flowing.
+              </p>
+            </div>
+
+            <div class="booking-card">
+              <div class="card-icon">
+                <i class="fas fa-headphones"></i>
+              </div>
+              <h3>Professional Setup</h3>
+              <p>
+                State-of-the-art equipment and professional sound engineering
+                ensure crystal-clear audio quality.
+              </p>
+            </div>
+
+            <div class="contact-info">
+              <h3>Get in Touch</h3>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>booking@alexrodriguez.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Miami, FL - Available Worldwide</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-form">
+            <form class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name *</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+                <div class="form-group">
+                  <label for="event-type">Event Type</label>
+                  <select id="event-type" name="event-type">
+                    <option value="">Select Event Type</option>
+                    <option value="club">Club Night</option>
+                    <option value="festival">Festival</option>
+                    <option value="private">Private Event</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="event-date">Event Date</label>
+                  <input type="date" id="event-date" name="event-date" />
+                </div>
+                <div class="form-group">
+                  <label for="location">Location</label>
+                  <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    placeholder="City, State/Country"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="budget">Budget Range</label>
+                <select id="budget" name="budget">
+                  <option value="">Select Budget Range</option>
+                  <option value="5k-10k">$5,000 - $10,000</option>
+                  <option value="10k-25k">$10,000 - $25,000</option>
+                  <option value="25k-50k">$25,000 - $50,000</option>
+                  <option value="50k+">$50,000+</option>
+                  <option value="discuss">Let's Discuss</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Event Details *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about your event, expected attendance, venue details, and any special requirements..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span>Send Booking Request</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>SoundWave</h3>
+            <p>
+              Creating electronic music that moves souls and ignites dance
+              floors worldwide.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-soundcloud"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Music</h4>
+            <ul>
+              <li><a href="#">Latest Releases</a></li>
+              <li><a href="#">Albums</a></li>
+              <li><a href="#">Remixes</a></li>
+              <li><a href="#">Collaborations</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Shows</h4>
+            <ul>
+              <li><a href="#">Upcoming Events</a></li>
+              <li><a href="#">Past Performances</a></li>
+              <li><a href="#">Festival Dates</a></li>
+              <li><a href="#">Private Bookings</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Booking</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Alex Rodriguez. All rights reserved. | Template by
+            SoundWave
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
